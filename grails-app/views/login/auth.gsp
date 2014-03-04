@@ -18,7 +18,7 @@
                         <div class="center">
                             <h1>
                                 <i class="icon-leaf green"></i>
-                                <span class="red"><g:message code="springSecurity.login.header.title" default="OrosCapital"/></span>
+                                <span class="red"><g:message code="springSecurity.login.header.title"/></span>
                             </h1>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                                     <div class="widget-main">
                                         <h4 class="header blue lighter bigger">
                                             <i class="icon-coffee green"></i>
-                                             <g:message code="springSecurity.login.header.insert.information" default="Please Enter Your Information"/>
+                                             <g:message code="springSecurity.login.header.insert.information"/>
                                         </h4>
 
                                        <h5 class="help-block"><g:if test='${flash.message}'>  <div class='login_message alert-danger '> <i class="icon-bell red"> <b> ${flash.message} </b> </i></div> </g:if> </h5>
