@@ -130,4 +130,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/images/**':                  ['permitAll'],
 	'/**/favicon.ico':                ['permitAll']
 ]
+//grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/login/loginSuccess'
+grails.plugin.springsecurity.logout.postOnly = false
 
