@@ -5,6 +5,7 @@ import com.gsl.uma.security.UserRole
 class BootStrap {
 
     def init = { servletContext ->
+        createUserWithRole()
     }
     void createUserWithRole(){
         Role superAdmin = Role.findByAuthority("ROLE_SUPER_ADMIN")
