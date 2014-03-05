@@ -147,14 +147,14 @@
 
     <ul class="submenu">
         <li>
-            <a href="tables.html">
+            <a href="${createLink(controller: 'demo',action: 'index')}">
                 <i class="icon-double-angle-right"></i>
                 Simple &amp; Dynamic
             </a>
         </li>
 
         <li>
-            <a href="jqgrid.html">
+            <a href="${createLink(controller: 'demo',action: 'jqGrid')}">
                 <i class="icon-double-angle-right"></i>
                 jqGrid plugin
             </a>
@@ -323,7 +323,7 @@
         </li>
 
         <li>
-            <a href="blank.html">
+            <a href="${createLink(controller: 'demo',action: 'emptyPage')}">
                 <i class="icon-double-angle-right"></i>
                 Blank Page
             </a>
