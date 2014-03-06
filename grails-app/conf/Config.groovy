@@ -120,7 +120,7 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.gsl.uma.secur
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.gsl.uma.security.UserRole'
 grails.plugin.springsecurity.authority.className = 'com.gsl.uma.security.Role'
 grails.plugin.springsecurity.requestMap.className = 'com.gsl.uma.security.RequestMap'
-//grails.plugin.springsecurity.securityConfigType = 'Requestmap'
+grails.plugin.springsecurity.securityConfigType = 'Requestmap'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],
