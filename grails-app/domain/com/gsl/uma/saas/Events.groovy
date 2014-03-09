@@ -7,6 +7,7 @@ class Events {
 //    String requestUrl
     String controllerName
     String actionName
+//    String iconClassName;
     boolean showOnMenu = false
     boolean isPermitToAll = false
     boolean status =true

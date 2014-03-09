@@ -1,11 +1,15 @@
 package com.gsl.oros.core.banking
 
-import org.springframework.security.access.annotation.Secured
+import com.gsl.uma.saas.Feature
 
-@Secured('ROLE_SUPER_ADMIN')
 class DashboardController {
 
     def index() {
+        def featureList = Feature.withCriteria {
+            eq 'status', true
+            eq 'showOnMenu', true
+        }
+        println featureList
         render(view: 'index')
     }
 }

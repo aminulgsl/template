@@ -225,6 +225,7 @@
             ];
 
     jQuery(function($) {
+        var $path_base = "/";//this will be used in gritter alerts containing images
         var grid_selector = "#grid-table";
         var pager_selector = "#grid-pager";
 

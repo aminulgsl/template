@@ -121,15 +121,18 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.gsl.uma.se
 grails.plugin.springsecurity.authority.className = 'com.gsl.uma.security.Role'
 grails.plugin.springsecurity.requestMap.className = 'com.gsl.uma.security.RequestMap'
 grails.plugin.springsecurity.securityConfigType = 'Requestmap'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+/*grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],
 	'/index.gsp':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
-]
-//grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/login/loginSuccess'
+	'js*':                      ['permitAll'],
+	'css*':                     ['permitAll'],
+	'images*':                  ['permitAll'],
+	'favicon.ico':                ['permitAll']
+]*/
+grails.plugin.springsecurity.rejectIfNoRule = true
+grails.plugin.springsecurity.fii.rejectPublicInvocations = false
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/login/loginSuccess'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault=true
 grails.plugin.springsecurity.logout.postOnly = false
 

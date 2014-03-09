@@ -2,26 +2,23 @@
   Created by IntelliJ IDEA.
   User: Mohammed Imran
   Date: 3/4/14
-  Time: 2:26 AM
+  Time: 2:27 AM
   To change this template use File | Settings | File Templates.
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-  <meta name="layout" content="oros">
-  <title></title>
-
-
-
+    <meta name="layout" content="oros">
+    <title></title>
 </head>
 <body>
 <div class="page-header">
     <h1>
-        jqGrid
+        Map User to Role
         <small>
             <i class="icon-double-angle-right"></i>
-            Dynamic tables and grids using jqGrid plugin
+            %{--Common form elements and layouts--}%
         </small>
     </h1>
 </div><!-- /.page-header -->
@@ -29,26 +26,9 @@
     <div class="col-xs-12">
         <!-- PAGE CONTENT BEGINS -->
 
-        <table id="grid-table"></table>
-
-        <div id="grid-pager"></div>
-
-
-
         <!-- PAGE CONTENT ENDS -->
     </div><!-- /.col -->
 </div><!-- /.row -->
 
-
-
-
-
-
-
-
 </body>
 </html>
-
-
-
-

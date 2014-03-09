@@ -4,6 +4,7 @@ class Module {
     String name
     String description
     String menuText
+    String iconClassName;
 //    String requestUrl
 //    String controllerName
 //    String actionName
@@ -14,5 +15,6 @@ class Module {
     static hasMany = [feature:Feature]
     static constraints = {
         name nullable: false, unique: true
+        iconClassName nullable: true
     }
 }
