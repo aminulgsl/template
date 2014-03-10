@@ -235,7 +235,7 @@
     </a>
 
     <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-        <li>
+        %{--<li>
             <a href="#">
                 <i class="icon-cog"></i>
                 Settings
@@ -249,10 +249,10 @@
             </a>
         </li>
 
-        <li class="divider"></li>
+        <li class="divider"></li>--}%
 
         <li>
-            <a href="#">
+            <a href="${createLink(controller: 'logout')}">
                 <i class="icon-off"></i>
                 Logout
             </a>
