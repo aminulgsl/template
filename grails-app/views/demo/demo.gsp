@@ -12,6 +12,7 @@
     .ui-jqgrid tr.ui-row-ltr td {
         border-right-color: transparent;
     }
+    .ui-widget-content table#controlTable td { border: 9px solid red !important; }
     </style>
 </head>
 <body>
