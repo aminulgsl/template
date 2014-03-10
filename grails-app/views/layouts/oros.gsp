@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="${resource(dir: 'css/compressed', file: 'jquery-ui-1.10.3.full.min.css')}"/>
     <link rel="stylesheet" href="${resource(dir: 'css/compressed', file: 'datepicker.css')}"/>
-    <link rel="stylesheet" href="${resource(dir: 'css/compressed', file: 'ui.jqgrid.css')}"/>
+
 
     <!--[if IE 7]>
 		  <link rel="stylesheet" href="${resource(dir: 'css/uncompressed', file: 'font-awesome-ie7.css')}" />
@@ -165,8 +165,6 @@
 <script src="${resource(dir: 'js/compressed', file: 'typeahead-bs2.min.js')}"></script>
 
 <!-- page specific plugin scripts -->
-<script src="${resource(dir: 'js/jqGrid', file: 'jquery.jqGrid.min.js')}"></script>
-<script src="${resource(dir: 'js/jqGrid/i18n', file: 'grid.locale-en.js')}"></script>
 
 <!-- inline scripts related to this page -->
 
@@ -193,9 +191,8 @@
 <script src="${resource(dir: 'js/uncompressed', file: 'ace-elements.js')}"></script>
 <script src="${resource(dir: 'js/uncompressed', file: 'ace.js')}"></script>
 
-
 <!-- inline scripts related to this page -->
-<script type="text/javascript">
+%{--<script type="text/javascript">
 
     var grid_data =
             [
@@ -242,7 +239,7 @@
                     formatoptions:{
                         keys:true,
 
-                        delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback},
+                        delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback}
                         //editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
                     }
                 },
@@ -319,7 +316,7 @@
                     refresh: true,
                     refreshicon : 'icon-refresh green',
                     view: true,
-                    viewicon : 'icon-zoom-in grey',
+                    viewicon : 'icon-zoom-in grey'
                 },
                 {
                     //edit record form
@@ -370,7 +367,7 @@
                         style_search_filters($(this));
                     }
                     ,
-                    multipleSearch: true,
+                    multipleSearch: true
                     /**
                      multipleGroup:true,
                      showQuery: true
@@ -507,11 +504,11 @@
 
     });
 
-</script>
+</script>--}%
 
 
 
-<script type="text/javascript">
+%{--<script type="text/javascript">
     jQuery(function ($) {
         $('.easy-pie-chart.percentage').each(function () {
             var $box = $(this).closest('.infobox');
@@ -699,7 +696,7 @@
 
 
     })
-</script>
+</script>--}%
 %{--<g:javascript library="application"/>--}%
 <r:layoutResources/>
 
