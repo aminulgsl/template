@@ -19,4 +19,10 @@ class ManageUserController {
     def delete() { }
     def list() { }
     def listShowOnly() { }
+    def userRight(){
+        render (view: 'mapUserRole')
+    }
+    def saveUserRight(){
+
+    }
 }

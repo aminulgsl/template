@@ -5,7 +5,7 @@ class ManageRoleController {
     def index() {
     render (view: 'createRole')
     }
-    def create() {
+    def save() {
         println params
         if (request.method == 'POST') {
             String authority = params.authority
@@ -29,12 +29,6 @@ class ManageRoleController {
             }
         }
         render (view: 'createRole')
-    }
-    def mapUserRole(){
-        render (view: 'mapUserRole')
-    }
-    def saveUserRole(){
-
     }
     def update() { }
     def delete() { }
