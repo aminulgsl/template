@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="${resource(dir: 'css/compressed', file: 'jquery-ui-1.10.3.full.min.css')}"/>
     <link rel="stylesheet" href="${resource(dir: 'css/compressed', file: 'datepicker.css')}"/>
 
+    <link rel="stylesheet" href="${resource(dir: 'css/uncompressed', file: 'chosen.css')}"/>
+
 
     <!--[if IE 7]>
 		  <link rel="stylesheet" href="${resource(dir: 'css/uncompressed', file: 'font-awesome-ie7.css')}" />
@@ -176,6 +178,8 @@
 
 <script src="${resource(dir: 'js/uncompressed', file: 'jquery-ui-1.10.3.custom.js')}"></script>
 <script src="${resource(dir: 'js/uncompressed', file: 'jquery.ui.touch-punch.js')}"></script>
+
+<script src="${resource(dir: 'js/uncompressed', file: 'chosen.jquery.js')}"></script>
 
 <script src="${resource(dir: 'js/uncompressed', file: 'jquery.slimscroll.js')}"></script>
 <script src="${resource(dir: 'js/uncompressed', file: 'jquery.easy-pie-chart.js')}"></script>

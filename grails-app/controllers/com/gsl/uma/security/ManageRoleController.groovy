@@ -34,7 +34,16 @@ class ManageRoleController {
     def delete() { }
     def list() { }
     def listShowOnly() { }
-    def roleRight(){
+    def roleRight(Long roleId){
+        println params
+        if (request.method == 'POST') {
+            if(params.roleId){
+                Role role = Role.read(roleId)
+                if (role){
+                    println role
+                }
+            }
+        }
         render (view: 'mapRoleRight')
     }
     def saveRoleRight(){
