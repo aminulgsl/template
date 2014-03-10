@@ -78,16 +78,7 @@ class BootStrap {
                         userListShowOnly = new Events(name: 'USER_LIST_SHOW_ONLY',description:'This is a dumy link to show user List only',fmenuText:'User List',controllerName: 'manageUser',actionName:'listShowOnly', showOnMenu: true,isPermitToAll:false, status: true).save(failOnError: true)
                         userMgmt.addToEvents(userListShowOnly)
                     }
-                    Events showUserRight = Events.findByName('SHOW_USER_RIGHT')
-                    if(!showUserRight){
-                        showUserRight = new Events(name: 'SHOW_USER_RIGHT',description:'Show User right map',fmenuText:'Role Right Map',controllerName: 'manageUser',actionName:'userRight', showOnMenu: true,isPermitToAll:false, status: true).save(failOnError: true)
-                        userMgmt.addToEvents(showUserRight)
-                    }
-                    Events saveUserRight = Events.findByName('SAVE_USER_RIGHT')
-                    if(!saveUserRight){
-                        saveUserRight = new Events(name: 'SAVE_USER_RIGHT',description:'Save user right map',fmenuText:'Update',controllerName: 'manageUser',actionName:'saveUserRight', showOnMenu: false,isPermitToAll:false, status: true).save(failOnError: true)
-                        userMgmt.addToEvents(saveUserRight)
-                    }
+
 
                 // 1.2  role CURD
                 /*Feature roleMgmt = Feature.findByName('ROLE_MGMT')
@@ -106,6 +97,7 @@ class BootStrap {
                         createRoleSubmit = new Events(name: 'SAVE_CREATE_ROLE',description:'Create role with role List at bottom',fmenuText:'Save',controllerName: 'manageRole',actionName:'save', showOnMenu: false,isPermitToAll:true, status: true).save(failOnError: true)
                         userMgmt.addToEvents(createRoleSubmit)
                     }
+
                     // 1.2.2    Update User
                     Events updateRole = Events.findByName('UPDATE_ROLE')
                     if(!updateRole){
@@ -129,6 +121,17 @@ class BootStrap {
                     if(!roleListShowOnly){
                         roleListShowOnly = new Events(name: 'ROLE_LIST_SHOW_ONLY',description:'This is a dumy link to show List only',fmenuText:'Role List',controllerName: 'manageRole',actionName:'listShowOnly', showOnMenu: true,isPermitToAll:false, status: true).save(failOnError: true)
                         userMgmt.addToEvents(roleListShowOnly)
+                    }
+
+                    Events showRoleRightMap = Events.findByName('SHOW_ROLE_RIGHT_MAP')
+                    if(!showRoleRightMap){
+                        showRoleRightMap = new Events(name: 'SHOW_ROLE_RIGHT_MAP',description:'Show role right map',fmenuText:'Role Right Map',controllerName: 'manageRole',actionName:'roleRight', showOnMenu: true,isPermitToAll:false, status: true).save(failOnError: true)
+                        userMgmt.addToEvents(showRoleRightMap)
+                    }
+                    Events saveRoleRightMap = Events.findByName('SAVE_ROLE_RIGHT_MAP')
+                    if(!saveRoleRightMap){
+                        saveRoleRightMap = new Events(name: 'SAVE_ROLE_RIGHT_MAP',description:'Save role right map',fmenuText:'Update',controllerName: 'manageRole',actionName:'saveRoleRight', showOnMenu: false,isPermitToAll:true, status: true).save(failOnError: true)
+                        userMgmt.addToEvents(saveRoleRightMap)
                     }
 
 

@@ -34,4 +34,10 @@ class ManageRoleController {
     def delete() { }
     def list() { }
     def listShowOnly() { }
+    def roleRight(){
+        render (view: 'mapUserRight')
+    }
+    def saveRoleRight(){
+
+    }
 }
